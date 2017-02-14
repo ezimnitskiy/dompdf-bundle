@@ -1,0 +1,33 @@
+{
+  "name": "es/dompdf-bundle",
+  "type": "symfony-bundle",
+  "description": "This bundle provides a wrapper for using dompdf inside symfony.",
+  "keywords": [
+    "symfony",
+    "pdf",
+    "dompdf",
+    "bundle"
+  ],
+  "homepage": "https://effectivesoft.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "EffectiveSoft",
+      "email": "evgeniy.zimnitskiy@effective-soft.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3",
+    "symfony/framework-bundle": "2.*",
+    "symfony/symfony": "2.*",
+    "dompdf/dompdf": "^0.7"
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ES\\DompdfBundle\\": ""
+    }
+  }
+}

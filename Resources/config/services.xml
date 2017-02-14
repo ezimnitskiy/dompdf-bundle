@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="es.dompdf.wrapper.class">ES\DompdfBundle\Wrapper\DompdfWrapper</parameter>
+    </parameters>
+
+    <services>
+        <service id="dompdf" class="%es.dompdf.wrapper.class%">
+            <argument>%es.dompdf_web%</argument>
+            <argument>%es.dompdf_options%</argument>
+        </service>
+    </services>
+
+</container>
